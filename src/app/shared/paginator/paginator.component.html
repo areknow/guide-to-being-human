@@ -1,8 +1,8 @@
 <div class="pagination">
-  <div (click)="paginate('desc')" [class.inactive]="routeId === 1">
+  <div (click)="paginate('desc')" [class.inactive]="routeId === firstRoute">
     <img src="assets/icons/left-chevron.svg">
   </div>
-  <div (click)="paginate('asc')" [class.inactive]="routeId === 3">
+  <div (click)="paginate('asc')" [class.inactive]="routeId === lastRoute">
     <img src="assets/icons/right-chevron.svg">
   </div>
 </div>

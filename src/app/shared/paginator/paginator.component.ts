@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Params, ParamMap, Router, NavigationEnd } from '@angular/router';
-import { switchMap, filter, map } from 'rxjs/operators';
+import { Component } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
+import { filter } from 'rxjs/operators';
+import rulesData from './../../../data/rules.json';
 
 @Component({
   selector: 'app-paginator',
@@ -10,6 +11,8 @@ import { switchMap, filter, map } from 'rxjs/operators';
 export class PaginatorComponent {
 
   routeId: number;
+  firstRoute = 1;
+  lastRoute = rulesData.rules.length;
 
   /**
    * constructor
