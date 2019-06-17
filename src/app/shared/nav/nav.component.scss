@@ -15,11 +15,13 @@ nav {
     li {
       margin: 10px 0;
       a {
+        text-align: right;
         font-size: 20px;
         font-weight: bold;
         display: block;
         opacity: 0.15;
         position: relative;
+        letter-spacing: -2.2px;
         &:after {
           display: none;
           width: 40px;
@@ -29,7 +31,7 @@ nav {
           content: "";
           top: 0;
           bottom: 0;
-          left: -70px;
+          left: -60px;
           margin: auto;
         }
         &.active {
