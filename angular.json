@@ -49,7 +49,7 @@
             ],
             "assets": [
               "src/favicon.ico",
-              "src/icons",
+              "src/assets/icons",
               "src/_redirects"
             ],
             "scripts": []
