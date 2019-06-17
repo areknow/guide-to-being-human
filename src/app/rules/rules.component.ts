@@ -33,7 +33,7 @@ export class RulesComponent implements OnInit {
   }
 
   /**
-   * get rule data
+   * load rule data
    * @param id - id associated with a specific rule
    */
   loadRuleData(id: string): void {

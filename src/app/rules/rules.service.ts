@@ -11,7 +11,7 @@ export class RulesService {
   constructor() { }
 
   /**
-   * get rule data
+   * returns data for a specific rule
    * @param id - id associated with a specific rule
    */
   getRule(id: number): Rule {
