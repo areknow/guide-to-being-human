@@ -10,6 +10,9 @@ export class NavComponent {
 
   data = rulesData;
 
+  /**
+   * constructor
+   */
   constructor() { }
 
 }
