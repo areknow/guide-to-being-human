@@ -1,9 +1,13 @@
 .pagination {
   display: flex;
+  width: 80px;
+  justify-content: space-between;
   div {
-    margin: 10px;
-    font-size: 20px;
-    font-weight: bold;
+    cursor: pointer;
+    img {
+      height: 22px;
+      width: 22px;
+    }
     &.inactive {
       opacity: 0.15;
       pointer-events: none;
