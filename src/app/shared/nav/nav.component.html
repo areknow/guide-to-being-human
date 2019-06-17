@@ -1,8 +1,8 @@
 <nav>
   <ul>
     <li *ngFor="let rule of data.rules">
-      <a [routerLink] = "['/rule', rule.id]" 
-        routerLinkActive="active" 
+      <a routerLinkActive="active" 
+        [routerLink] = "['/rule', rule.id]" 
         [routerLinkActiveOptions]="{exact: true}" 
         [innerHTML]="rule.id"></a>
     </li>

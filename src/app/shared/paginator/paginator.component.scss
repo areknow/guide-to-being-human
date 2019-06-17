@@ -1,0 +1,12 @@
+.pagination {
+  display: flex;
+  div {
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    &.inactive {
+      opacity: 0.15;
+      pointer-events: none;
+    }
+  }
+}

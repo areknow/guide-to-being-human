@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavModule } from './shared/nav/nav.module';
 import { HeaderModule } from './shared/header/header.module';
+import { PaginatorModule } from './shared/paginator/paginator.module';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { HeaderModule } from './shared/header/header.module';
     BrowserModule,
     AppRoutingModule,
     NavModule,
-    HeaderModule
+    HeaderModule,
+    PaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
