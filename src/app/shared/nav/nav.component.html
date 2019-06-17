@@ -1,0 +1,5 @@
+<ul>
+  <li *ngFor="let rule of data.rules">
+    <a [routerLink] = "['/rule', rule.id]" [innerHTML]="rule.id"></a>
+  </li>
+</ul>
