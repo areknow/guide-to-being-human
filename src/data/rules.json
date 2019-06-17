@@ -17,6 +17,48 @@
       "number": "03",
       "title": "There are no mistakes, only lessons.",
       "description": "Growth is a process of experimentation, a series of trials, errors, and occasional victories. The failed experiments are as much a part of the process as the experiments that work."
+    },
+    {
+      "id": 4,
+      "number": "04",
+      "title": "A lesson is repeated until learned. ",
+      "description": "Lessons will be repeated to you in various forms until you have learned them. When you have learned them, you can then go on to the next lesson."
+    },
+    {
+      "id": 5,
+      "number": "05",
+      "title": "Learning does not end.",
+      "description": "Lessons will be repeated to you in various forms until you have learned them. When you have learned them, you can then go on to the next lesson."
+    },
+    {
+      "id": 6,
+      "number": "06",
+      "title": "‘There’ is no better than ‘here’. ",
+      "description": "When your ‘there’ has become a ‘here,’ you will simply obtain a ‘there’ that will look better to you than your present ‘here’."
+    },
+    {
+      "id": 7,
+      "number": "07",
+      "title": "Others are only mirrors of you.",
+      "description": "You cannot love or hate something about another person unless it reflects something you love or hate about yourself."
+    },
+    {
+      "id": 8,
+      "number": "08",
+      "title": "What you make of your life is up to you.",
+      "description": "You have all the tools and resources you need. What you do with them is up to you."
+    },
+    {
+      "id": 9,
+      "number": "09",
+      "title": "Your answers lie inside of you.",
+      "description": "All you need to do is look, listen, and trust."
+    },
+    {
+      "id": 10,
+      "number": "10",
+      "title": "You will forget all of this at birth.",
+      "description": "You will forget all of this at birth. You can remember it if you want by unravelling the double helix of inner knowing."
     }
   ]
 }
