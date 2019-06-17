@@ -49,8 +49,8 @@
             ],
             "assets": [
               "src/favicon.ico",
-              "src/assets",
-              "src/icons"
+              "src/icons",
+              "_redirects"
             ],
             "scripts": []
           },
