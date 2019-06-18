@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { filter } from 'rxjs/operators';
-import rulesData from './../../../data/rules.json';
+import rulesData from '../../../../data/rules.json';
 
 @Component({
   selector: 'app-paginator',

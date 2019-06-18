@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import rulesData from './../../../data/rules.json';
+import rulesData from '../../../../data/rules.json';
 
 @Component({
   selector: 'app-nav',
