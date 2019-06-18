@@ -1,7 +1,12 @@
-<app-header></app-header>
-<app-nav></app-nav>
+<div [@revealHeader]>
+  <app-header></app-header>
+</div>
 
-<div class="main">
+<div [@revealNav]>
+  <app-nav></app-nav>
+</div>
+
+<div [@revealContent] class="main">
   <div class="content">
     <h2 class="noselect">{{ rule.number }}</h2>
     <h1>{{ rule.title }}</h1>
@@ -9,4 +14,6 @@
   </div>
 </div >
 
-<app-paginator></app-paginator>
+<div [@revealPaginator]>
+  <app-paginator></app-paginator>
+</div>

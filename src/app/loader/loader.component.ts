@@ -10,10 +10,16 @@ import { LoaderAnimations } from './animation';
 })
 export class LoaderComponent {
 
+  /**
+   * router
+   * @param router - url and routing object
+   */
   constructor(private router: Router) { }
 
+  /**
+   * listen to animation done state
+   */
   animDone() {
     this.router.navigate(['rule', '1']);
   }
-
 }

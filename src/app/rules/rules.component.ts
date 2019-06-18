@@ -1,12 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { RulesAnimations } from './animation';
 import { Rule } from './rules.interface';
 import { RulesService } from './rules.service';
 
 @Component({
   selector: 'app-rules',
   templateUrl: './rules.component.html',
-  styleUrls: ['./rules.component.scss']
+  styleUrls: ['./rules.component.scss'],
+  animations: RulesAnimations
 })
 export class RulesComponent implements OnInit {
 
