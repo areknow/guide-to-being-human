@@ -1,6 +1,6 @@
 <div class="loader">
-  <div [@showTitle] class="title">A guide to being human.</div>
-  <div [@showLoader] (@showLoader.done)="trigger()" class="progress-bar">
+  <div [@title] (@title.done)="animDone()" class="title">A guide to being human.</div>
+  <div [@loader] class="progress-bar">
     <span></span>
   </div>
 <div>
