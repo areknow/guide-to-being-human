@@ -6,12 +6,10 @@ const routes: Routes = [
   {
     path: 'rule/:id',
     loadChildren: () => import('./rules/rules.module').then(m => m.RulesModule),
-    data: { state: 'rules' }
   },
   {
     path: '',
     component: LoaderComponent,
-    data: { state: 'home' }
   },
   {
     path: '**',
