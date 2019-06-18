@@ -4,9 +4,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoaderModule } from './loader/loader.module';
-import { HeaderModule } from './shared/header/header.module';
-import { NavModule } from './shared/nav/nav.module';
-import { PaginatorModule } from './shared/paginator/paginator.module';
 
 @NgModule({
   declarations: [
@@ -16,9 +13,6 @@ import { PaginatorModule } from './shared/paginator/paginator.module';
     BrowserAnimationsModule,
     BrowserModule,
     AppRoutingModule,
-    NavModule,
-    HeaderModule,
-    PaginatorModule,
     LoaderModule
   ],
   providers: [],
