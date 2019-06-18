@@ -1,9 +1,11 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavModule } from './shared/nav/nav.module';
+import { LoaderModule } from './loader/loader.module';
 import { HeaderModule } from './shared/header/header.module';
+import { NavModule } from './shared/nav/nav.module';
 import { PaginatorModule } from './shared/paginator/paginator.module';
 
 @NgModule({
@@ -11,11 +13,13 @@ import { PaginatorModule } from './shared/paginator/paginator.module';
     AppComponent
   ],
   imports: [
+    BrowserAnimationsModule,
     BrowserModule,
     AppRoutingModule,
     NavModule,
     HeaderModule,
-    PaginatorModule
+    PaginatorModule,
+    LoaderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

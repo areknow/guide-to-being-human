@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { RulesService } from './rules.service';
 import { Rule } from './rules.interface';
+import { RulesService } from './rules.service';
 
 @Component({
   selector: 'app-rules',

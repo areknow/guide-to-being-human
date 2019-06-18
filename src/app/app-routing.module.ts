@@ -1,10 +1,17 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
+import { LoaderComponent } from './loader/loader.component';
 
 const routes: Routes = [
   {
     path: 'rule/:id',
     loadChildren: () => import('./rules/rules.module').then(m => m.RulesModule),
+    data: { state: 'rules' }
+  },
+  {
+    path: '',
+    component: LoaderComponent,
+    data: { state: 'home' }
   },
   {
     path: '**',
