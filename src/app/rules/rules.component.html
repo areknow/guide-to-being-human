@@ -6,13 +6,16 @@
   <app-nav></app-nav>
 </div>
 
-<div [@fadeInUp] [@paginate]="state" (@paginate.done)="animDone($event)" class="main">
-  <div class="content">
-    <h2 class="noselect">{{ rule.number }}</h2>
-    <h1>{{ rule.title }}</h1>
-    <p>{{ rule.description }}</p>
+<ng-container *ngIf="!loading">
+  <div [@fadeInUp] [@paginate]="state" (@paginate.done)="animDone($event)" class="main">
+    <div class="content">
+      <h2 class="noselect">{{ rule.number }}</h2>
+      <h1>{{ rule.title }}</h1>
+      <p>{{ rule.description }}</p>
+    </div>
   </div>
-</div >
+</ng-container>
+
 
 <div [@fadeInDelay]>
   <app-paginator (route)="changeRoute($event)"></app-paginator>
