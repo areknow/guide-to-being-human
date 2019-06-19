@@ -5,5 +5,5 @@ import { Injectable } from '@angular/core';
 })
 export class AppService {
 
-  routeNumber = 1;
+  ruleNumber = 1;
 }

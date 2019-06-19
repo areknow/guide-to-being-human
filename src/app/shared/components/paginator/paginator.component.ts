@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { filter } from 'rxjs/operators';
-import { AppService } from 'src/app/app.service.js';
+import { AppService } from 'src/app/app.service';
 import rulesData from '../../../../data/rules.json';
 
 @Component({
@@ -18,7 +18,6 @@ export class PaginatorComponent {
 
   /**
    * constructor
-   * @param appService - application singleton
    * @param router - navigation and url data
    */
   constructor(
@@ -29,7 +28,7 @@ export class PaginatorComponent {
     .pipe(filter(event => event instanceof NavigationEnd))
     .subscribe((event: NavigationEnd) => {
       if (event.urlAfterRedirects.split('/')[1] === 'rule') {
-        this.appService.routeNumber = Number(event.urlAfterRedirects.split('/')[2]);
+        this.appService.ruleNumber = Number(event.urlAfterRedirects.split('/')[2]);
       }
     });
   }
@@ -39,9 +38,9 @@ export class PaginatorComponent {
    * @param direction - which way the router should go
    */
   paginate(direction: string) {
-    const routeNumber = this.appService.routeNumber + (direction === 'desc' ? -1 : +1);
+    const changeDir = this.appService.ruleNumber + (direction === 'desc' ? -1 : +1);
     // Send route number to parent component
-    this.route.emit(routeNumber);
+    this.route.emit(changeDir);
   }
 
 }

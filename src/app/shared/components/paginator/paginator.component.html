@@ -1,8 +1,8 @@
 <div class="paginator noselect">
-  <div (click)="paginate('desc')" [class.inactive]="appService.routeNumber === firstRoute">
+  <div (click)="paginate('desc')" [class.inactive]="appService.ruleNumber === firstRoute">
     <img src="assets/icons/left-chevron.svg">
   </div>
-  <div (click)="paginate('asc')" [class.inactive]="appService.routeNumber === lastRoute">
+  <div (click)="paginate('asc')" [class.inactive]="appService.ruleNumber === lastRoute">
     <img src="assets/icons/right-chevron.svg">
   </div>
 </div>

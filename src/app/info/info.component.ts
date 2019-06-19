@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AppService } from '../app.service';
 import { FadeInAnimation } from '../shared/animations/fade-in';
 
 @Component({
@@ -7,4 +8,7 @@ import { FadeInAnimation } from '../shared/animations/fade-in';
   styleUrls: ['./info.component.scss'],
   animations: FadeInAnimation
 })
-export class InfoComponent { }
+export class InfoComponent {
+
+  constructor(public appService: AppService) { }
+}

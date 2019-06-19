@@ -3,7 +3,7 @@
   <h3>
     <ng-container [ngSwitch]="close">
       <a *ngSwitchDefault routerLink="/info">Info</a>
-      <a *ngSwitchCase="true" [routerLink]="['/rule', appService.routeNumber]">Close</a>
+      <a *ngSwitchCase="true" [routerLink]="['/rule', appService.ruleNumber ]">Close</a>
     </ng-container>
   </h3>
 </header>
