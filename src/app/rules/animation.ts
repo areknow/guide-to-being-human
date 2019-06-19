@@ -2,6 +2,8 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
 
 export const RulesAnimations = [
   trigger('paginate', [
+
+    // Set start and end states
     state('enter', style({
       opacity: '1',
       transform: 'translate(0, 0)'
@@ -10,6 +12,8 @@ export const RulesAnimations = [
       opacity: '0',
       transform: 'translate(-20px, 0)'
     })),
+
+    // Define transitions
     transition('* => exit', [
       animate('200ms', style({
         opacity: 0,
