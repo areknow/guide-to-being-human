@@ -1,0 +1,9 @@
+.main {
+  height: calc( 100vh - 85px );
+  .content {
+    top: 32%;
+    p {
+      max-width: 900px;
+    }
+  }
+}

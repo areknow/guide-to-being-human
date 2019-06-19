@@ -1,6 +1,9 @@
 <header class="noselect">
   <h3>Guide to being human.</h3>
   <h3>
-    <a routerLink="info">Info</a>
+    <ng-container [ngSwitch]="close">
+      <a *ngSwitchDefault routerLink="/info">Info</a>
+      <a *ngSwitchCase="true" (click)="location.back()">Close</a>
+    </ng-container>
   </h3>
 </header>

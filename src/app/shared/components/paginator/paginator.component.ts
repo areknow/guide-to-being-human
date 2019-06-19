@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { filter } from 'rxjs/operators';
 import rulesData from '../../../../data/rules.json';
@@ -9,6 +9,8 @@ import rulesData from '../../../../data/rules.json';
   styleUrls: ['./paginator.component.scss']
 })
 export class PaginatorComponent {
+
+  @Output() route = new EventEmitter <number>();
 
   routeId: number;
   firstRoute = 1;
@@ -31,10 +33,9 @@ export class PaginatorComponent {
    * @param direction - which way the router should go
    */
   paginate(direction: string) {
-    this.router.navigate([
-      'rule',
-      this.routeId + (direction === 'desc' ? -1 : +1)
-    ]);
+    const routeNumber = this.routeId + (direction === 'desc' ? -1 : +1);
+    // Send route number to parent component
+    this.route.emit(routeNumber);
   }
 
 }

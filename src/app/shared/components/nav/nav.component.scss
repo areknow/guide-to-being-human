@@ -18,8 +18,10 @@ nav {
         opacity: 0.15;
         position: relative;
         letter-spacing: -2.2px;
+        transition: all 1s ease;
         &:after {
-          display: none;
+          display: block;
+          opacity: 0;
           width: 40px;
           height: 3px;
           background: #000;
@@ -29,11 +31,12 @@ nav {
           bottom: 0;
           left: -60px;
           margin: auto;
+          transition: all 500ms ease;
         }
         &.active {
           opacity: 1;
           &:after {
-            display: block;
+            opacity: 1;
           }
         }
       }
